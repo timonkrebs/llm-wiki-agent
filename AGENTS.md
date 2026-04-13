@@ -1,6 +1,6 @@
 # LLM Wiki Agent — Schema & Workflow Instructions
 
-This wiki is maintained entirely by your coding agent. No API key or Python scripts needed — just open this repo in Codex, OpenCode, or any agent that reads this file, and talk to it.
+This wiki is maintained entirely by your coding agent. No API key or C# scripts needed — just open this repo in Codex, OpenCode, or any agent that reads this file, and talk to it.
 
 ## How to Use
 
@@ -31,7 +31,7 @@ wiki/         # Agent owns this layer entirely
   concepts/   # Ideas, frameworks, methods, theories
   syntheses/  # Saved query answers
 graph/        # Auto-generated graph data
-tools/        # Optional standalone Python scripts (require ANTHROPIC_API_KEY)
+tools/        # Optional standalone C# scripts (require OLLAMA_URL)
 ```
 
 ---
@@ -174,9 +174,9 @@ Output a lint report and ask if the user wants it saved to `wiki/lint-report.md`
 
 Triggered by: *"build graph"*
 
-First try: `python tools/build_graph.py --open`
+First try: `./tools/build_graph.cs --open`
 
-If Python/deps unavailable, build manually:
+If C#/deps unavailable, build manually:
 1. Search for all `[[wikilinks]]` across wiki pages
 2. Build nodes (one per page) and edges (one per link)
 3. Infer implicit relationships not captured by wikilinks — tag `INFERRED` with confidence score; low confidence → `AMBIGUOUS`

@@ -1,6 +1,6 @@
 # LLM Wiki Agent — Schema & Workflow Instructions
 
-This wiki is maintained entirely by Claude Code. No API key or Python scripts needed — just open this repo in Claude Code and talk to it.
+This wiki is maintained entirely by Claude Code. No API key or C# scripts needed — just open this repo in Claude Code and talk to it.
 
 ## Slash Commands (Claude Code)
 
@@ -34,7 +34,7 @@ wiki/         # Claude owns this layer entirely
   concepts/   # Ideas, frameworks, methods, theories
   syntheses/  # Saved query answers
 graph/        # Auto-generated graph data
-tools/        # Optional standalone Python scripts (require ANTHROPIC_API_KEY)
+tools/        # Optional standalone C# scripts (require OLLAMA_URL)
 ```
 
 ---
@@ -177,13 +177,13 @@ Output a lint report and ask if the user wants it saved to `wiki/lint-report.md`
 
 Triggered by: *"build the knowledge graph"* or `/wiki-graph`
 
-When the user asks to build the graph, run `tools/build_graph.py` which:
+When the user asks to build the graph, run `tools/build_graph.cs` which:
 - Pass 1: Parses all `[[wikilinks]]` → deterministic `EXTRACTED` edges
 - Pass 2: Infers implicit relationships → `INFERRED` edges with confidence scores
 - Runs Louvain community detection
 - Outputs `graph/graph.json` + `graph/graph.html`
 
-If the user doesn't have Python/dependencies set up, instead generate the graph data manually:
+If the user doesn't have C#/dependencies set up, instead generate the graph data manually:
 1. Use Grep to find all `[[wikilinks]]` across wiki pages
 2. Build a node/edge list
 3. Write `graph/graph.json` directly

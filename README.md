@@ -33,7 +33,7 @@ git clone https://github.com/SamurAIGPT/llm-wiki-agent.git
 cd llm-wiki-agent
 ```
 
-Open in your agent — no API key or Python setup needed:
+Open in your agent — no API key or C# setup needed:
 
 ```bash
 claude      # reads CLAUDE.md + .claude/commands/
@@ -229,7 +229,7 @@ If you want to keep the LLM Wiki Agent repository separate from your main person
 
 - File good query answers back with `--save` — your explorations compound just like ingested sources
 - The wiki is a git repo — version history for free
-- Standalone Python scripts in `tools/` work without a coding agent (require `ANTHROPIC_API_KEY`)
+- Standalone C# scripts in `tools/` work without a coding agent (require `OLLAMA_URL`)
 
 ## Tech Stack
 
