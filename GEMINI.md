@@ -161,7 +161,7 @@ Check for: orphan pages, broken links, contradictions, stale content, missing en
 
 Triggered by: *"build graph"*
 
-Try `./tools/build_graph.cs --open` first. If unavailable, build graph.json and graph.html manually from wikilinks.
+Try `dotnet ./tools/build_graph.cs --open` first. If unavailable, build graph.json and graph.html manually from wikilinks.
 
 ---
 

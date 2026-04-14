@@ -174,7 +174,7 @@ Output a lint report and ask if the user wants it saved to `wiki/lint-report.md`
 
 Triggered by: *"build graph"*
 
-First try: `./tools/build_graph.cs --open`
+First try: `dotnet ./tools/build_graph.cs --open`
 
 If C#/deps unavailable, build manually:
 1. Search for all `[[wikilinks]]` across wiki pages

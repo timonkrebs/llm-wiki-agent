@@ -22,9 +22,9 @@ var questionArgs = args.Where(a => a != "--save" && !a.StartsWith("--save=")).To
 if (questionArgs.Count == 0)
 {
     Console.WriteLine("Usage:");
-    Console.WriteLine("    ./tools/query.cs \"What are the main themes across all sources?\"");
-    Console.WriteLine("    ./tools/query.cs \"How does ConceptA relate to ConceptB?\" --save");
-    Console.WriteLine("    ./tools/query.cs \"Summarize everything about EntityName\" --save=synthesis/my-analysis.md");
+    Console.WriteLine("    dotnet ./tools/query.cs \"What are the main themes across all sources?\"");
+    Console.WriteLine("    dotnet ./tools/query.cs \"How does ConceptA relate to ConceptB?\" --save");
+    Console.WriteLine("    dotnet ./tools/query.cs \"Summarize everything about EntityName\" --save=synthesis/my-analysis.md");
     return;
 }
 var question = string.Join(" ", questionArgs);
@@ -137,7 +137,7 @@ var today = DateTime.Now.ToString("yyyy-MM-dd");
 var indexContent = ReadFile(indexFile);
 if (string.IsNullOrWhiteSpace(indexContent))
 {
-    Console.WriteLine("Wiki is empty. Ingest some sources first with: ./tools/ingest.cs <source>");
+    Console.WriteLine("Wiki is empty. Ingest some sources first with: dotnet ./tools/ingest.cs <source>");
     return;
 }
 

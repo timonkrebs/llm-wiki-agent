@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 
 if (args.Length == 0)
 {
-    Console.WriteLine("Usage: ./tools/ingest.cs <path-to-source> [path2 ...] [dir1 ...]");
+    Console.WriteLine("Usage: dotnet ./tools/ingest.cs <path-to-source> [path2 ...] [dir1 ...]");
     return;
 }
 
