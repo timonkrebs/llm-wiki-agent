@@ -1,6 +1,6 @@
 # LLM Wiki Agent — Schema & Workflow Instructions
 
-This wiki is maintained entirely by Gemini CLI. No API key or Python scripts needed — just open this repo with `gemini` and talk to it.
+This wiki is maintained entirely by Gemini CLI. No API key or C# scripts needed — just open this repo with `gemini` and talk to it.
 
 ## How to Use
 
@@ -31,7 +31,7 @@ wiki/         # Agent owns this layer entirely
   concepts/   # Ideas, frameworks, methods, theories
   syntheses/  # Saved query answers
 graph/        # Auto-generated graph data
-tools/        # Optional standalone Python scripts
+tools/        # Optional standalone C# scripts
 ```
 
 ---
@@ -161,7 +161,7 @@ Check for: orphan pages, broken links, contradictions, stale content, missing en
 
 Triggered by: *"build graph"*
 
-Try `python tools/build_graph.py --open` first. If unavailable, build graph.json and graph.html manually from wikilinks.
+Try `dotnet ./tools/build_graph.cs --open` first. If unavailable, build graph.json and graph.html manually from wikilinks.
 
 ---
 
